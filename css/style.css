@@ -199,9 +199,10 @@ input {
 }
 
 .footer__copyright {
-	margin-top: 40px;
+	margin: 40px 0;
 	text-align: center;
 	opacity: 0.5;
+	font-weight: bold;
 }
 
 .footer__group {
@@ -221,8 +222,8 @@ input {
 
 .footer__links a {
 	margin-bottom: 15px;
+	font-weight: bold;
 }
-
 
 @media (max-width: 1024px) {
 	
@@ -237,45 +238,67 @@ input {
 }
 
 @media (max-width: 320px) {
+
 	header {
 		padding: 10px;
 	}
+
 	.header__logo {
 		width: 30%;
 	}
+
 	button {
 		border-radius: 10px;
 		padding: 10px;
 	}
+
 	.about {
 		display: flex;
 		flex-direction: column-reverse;
 		padding: 50px 0;
 	}
+
 	.about__image {
-		width: 300px;
+		width: 280px;
 	}
+
 	.about h1 {
 		font-size: 36px;
 		line-height: 40px;
 		padding: 0 10px;
 	}
+
 	.about p {
 		padding: 0 10px;
 		line-height: 25px;
 		font-size: 18px;
 	}
+
 	.about__sun-image {
 		position: absolute;
-		width: 80px;
-		height: 80px;
+		width: 75px;
+		height: 75px;
 		animation: rotation 10s linear infinite;
 	}
+
 	.about button {
 		font-size: 18px;
 		border-radius: 20px;
 		padding: 20px 25px;
 		margin: 20px 0 0 10px;
 	}
+
+	.form {
+		padding: 50px 0;
+	}
+
+	.form__container {
+		margin: 0 10px;
+	}
 	
+	.footer__container {
+		display: flex;
+		flex-direction: column;
+		padding: 0 0 0 10px;
+	}
 }
