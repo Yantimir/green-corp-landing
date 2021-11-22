@@ -75,12 +75,6 @@ button:hover {
 	max-width: 550px;
 }
 
-/* анимация слева */
-.animate__animated.animate__fadeInLeft {
-	--animate-duration: 2s;
-	--animation-iteration-count: 1;
-}
-
 .about h1 {
 	font-size: 60px;
 	line-height: 60px;
@@ -98,11 +92,6 @@ button:hover {
 	width: 500px;
 }
 
-/* анимация справа */
-.animate__animated.animate__fadeInRight{
-	--animate-duration: 2s;
-	--animation-iteration-count: 1;
-}
 .about__sun-image {
 	position: absolute;
 	width: 100px;
