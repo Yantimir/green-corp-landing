@@ -75,6 +75,12 @@ button:hover {
 	max-width: 550px;
 }
 
+/* анимация слева */
+.animate__animated.animate__fadeInLeft {
+	--animate-duration: 2s;
+	--animation-iteration-count: 1;
+}
+
 .about h1 {
 	font-size: 60px;
 	line-height: 60px;
@@ -91,7 +97,12 @@ button:hover {
 .about__image {
 	width: 500px;
 }
-   
+
+/* анимация справа */
+.animate__animated.animate__fadeInRight{
+	--animate-duration: 2s;
+	--animation-iteration-count: 1;
+}
 .about__sun-image {
 	position: absolute;
 	width: 100px;
@@ -244,7 +255,7 @@ input {
 	}
 
 	.header__logo {
-		width: 30%;
+		height: 20px;
 	}
 
 	button {
@@ -255,7 +266,7 @@ input {
 	.about {
 		display: flex;
 		flex-direction: column-reverse;
-		padding: 50px 0;
+		padding: 50px 10px;
 	}
 
 	.about__image {
@@ -265,11 +276,9 @@ input {
 	.about h1 {
 		font-size: 36px;
 		line-height: 40px;
-		padding: 0 10px;
 	}
 
 	.about p {
-		padding: 0 10px;
 		line-height: 25px;
 		font-size: 18px;
 	}
@@ -289,16 +298,12 @@ input {
 	}
 
 	.form {
-		padding: 50px 0;
+		padding: 50px 10px;
 	}
 
-	.form__container {
-		margin: 0 10px;
-	}
-	
 	.footer__container {
 		display: flex;
 		flex-direction: column;
-		padding: 0 0 0 10px;
+		padding: 50px 10px;
 	}
 }

@@ -11,6 +11,8 @@
 		<!-- Подключение иконки сайта -->
 		<link rel="icon" href="#">
 		<!-- Подключение CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+		<link href="css/all.css" rel="stylesheet" >
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
 	</head>
@@ -27,12 +29,12 @@
 
 		<!-- About -->
 		<section class="about">
-			<div class="about__info">
+			<div class="about__info animate__animated animate__fadeInLeft">
 				<h1>Солнечные панели GreenRobotic</h1>
     			<p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-    			<button>Узнать подробнее</button>
+    			<button>Узнать подробнее <i class="fas fa-angle-right"></i></button>
 			</div>
-			<div class="about__images">
+			<div class="about__images animate__animated animate__fadeInRight">
 				<img class="about__sun-image" src="img/sun.png">
     			<img class="about__image" src="img/solar-panel.png">
 			</div>
@@ -102,7 +104,8 @@
 			</div>
 			<div class="footer__copyright">GreenCorp © 2021</div>	
 		</footer>
-
+		<!-- Подключение JavaScript  -->
+		<script src="js/all.js"></script>
 	</body>
 </html>
 
