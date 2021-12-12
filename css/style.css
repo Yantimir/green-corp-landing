@@ -127,7 +127,7 @@ button:hover {
 
 .card {
 	padding: 35px 40px 25px 40px;
-	margin: 25px;
+	margin: 0px 25px;
 	border: 1px solid #D9E4E6;
 	border-radius: 5px;
 }
@@ -140,20 +140,18 @@ button:hover {
 	height: 100px;
 
 	/* text-align: center; */
-	
+	color: #ad1714;
 	border-radius: 50%;
 	font-size: 32px;
 	font-weight: 700;
 	background: #eaeff9;
 	
 }
-.logo-solar{
+.fa-solar-panel {
 	color: #ffb406;
 }
-.logo-24 {
-	color: #ad1714;
-}
-.logo-chart {
+
+.fa-chart-line {
 	color: #22a030;
 }
 
@@ -172,7 +170,55 @@ button:hover {
 	border-top: 1px solid #E6EAF4;
 }
 
+.features__feedback {
+	display: flex;
+}
 
+.features__feedback-left {
+	margin-right: 10px;
+}
+
+.features__feedback-left h2 {
+	font-size: 48px;
+}
+
+.features__feedback-left p {
+	font-size: 18px;
+	line-height: 26px;
+	opacity: 0.7;
+}
+
+.features__feedback-right {
+	display: flex;
+	justify-content: center;
+}
+
+.features__box {
+	padding: 30px 40px 25px 40px;
+	border-radius: 25px;
+	color: #fff;
+}
+
+.features__box h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 48px;
+}
+
+.features__savings-box {
+	background: #dc5e26;
+	box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
+	margin-right: 30px;
+}
+
+.features__rate-box {
+	background: #1D263A;
+	box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
+}
+
+.fa-star {
+	color: #ff7039;
+}
 
 /* Form 
 ================ */
@@ -331,15 +377,6 @@ input {
 		margin: 20px 0 0 10px;
 	}
 
-
-	.features{
-		background-color: #fff;
-		padding: 50px 10px;
-	}
-
-
-
-
 	.form {
 		padding: 50px 10px;
 	}
@@ -408,12 +445,54 @@ input {
 		margin: 20px 0 0 10px;
 	}
 
-	.form {
-		padding: 50px 10px;
-	}
 	.cards {
 		display: grid;
 		grid-template-columns: auto;	
+	}
+
+	.card {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.card:last-child{
+		margin: 25px 0px 0px 0px;
+	}
+
+	.features{
+		background-color: #fff;
+		padding: 50px 10px;
+	}
+
+	.features__feedback {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.features__feedback-left {
+		margin-right: 0px;
+	}
+	
+	.features__feedback-left h2 {
+		font-size: 48px;
+	}
+
+	.features__feedback-right {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.features__box h3 {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-size: 36px;
+	}
+
+	.features__savings-box {
+		margin-bottom: 30px;
+	}
+
+	.form {
+		padding: 50px 10px;
 	}
 
 	.footer__container {
