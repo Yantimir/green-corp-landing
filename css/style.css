@@ -85,7 +85,7 @@ button:hover {
 	font-size: 18px;
 	border-radius: 20px;
 	padding: 20px 25px;
-	margin-top: 20px;
+	margin: 20px 0px 0px 0px;
 }
 
 .about__image {
@@ -109,6 +109,68 @@ button:hover {
 	}
 }
 
+
+
+/* Features 
+================ */
+
+.features{
+	background-color: #fff;
+	padding: 115px 60px;
+	
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;	
+}
+
+.card {
+	padding: 35px 40px 25px 40px;
+	margin: 25px;
+	border: 1px solid #D9E4E6;
+	border-radius: 5px;
+}
+.card__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100px;
+	height: 100px;
+
+	/* text-align: center; */
+	
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: 700;
+	background: #eaeff9;
+	
+}
+.logo-solar{
+	color: #ffb406;
+}
+.logo-24 {
+	color: #ad1714;
+}
+.logo-chart {
+	color: #22a030;
+}
+
+.card h3 {
+	font-size: 16px;
+	line-height: 22px;
+	opacity: 0.8;
+}
+
+.card p {
+	font-size: 16px;
+}
+
+.features__border {
+	margin: 50px 0px;
+	border-top: 1px solid #E6EAF4;
+}
 
 
 
@@ -269,6 +331,15 @@ input {
 		margin: 20px 0 0 10px;
 	}
 
+
+	.features{
+		background-color: #fff;
+		padding: 50px 10px;
+	}
+
+
+
+
 	.form {
 		padding: 50px 10px;
 	}
@@ -339,6 +410,10 @@ input {
 
 	.form {
 		padding: 50px 10px;
+	}
+	.cards {
+		display: grid;
+		grid-template-columns: auto;	
 	}
 
 	.footer__container {
@@ -461,9 +536,12 @@ input {
 		font-size: 18px;
 		border-radius: 20px;
 		padding: 20px 25px;
-		margin: 20px 0 0 10px;
+		margin: 20px 0 0 0px;
 	}
-
+	.card {
+		padding: 35px 40px 25px 40px;
+		margin: 25px 0px;
+	}		
 	.form {
 		padding: 50px 10px;
 	}
