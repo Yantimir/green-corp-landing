@@ -59,17 +59,30 @@ button:hover {
 /* About 
 ============== */
 .about {
+	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding-top: 115px;
 	padding-bottom: 115px;
 
+	position: relative;
+
 	background: url("../img/back.png") no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+/*Canvas in About
+==================*/
+.orb-canvas{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+/*================*/
 
 .about__info {
 	max-width: 550px;
@@ -408,7 +421,7 @@ input {
 
 /* 1024 
 =============================*/
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 	header {
 		padding: 20px;
 	}
@@ -464,7 +477,7 @@ input {
 	.footer__group {
 		padding: 0 20px;
 	}
-}
+} */
 
 
 /* 720
@@ -589,7 +602,7 @@ input {
 
 /* 540
 =========================== */
-@media (max-width: 540px) {
+/* @media (max-width: 540px) {
 	header {
 		padding: 20px;
 	}
@@ -646,12 +659,12 @@ input {
 		flex-direction: column;
 		padding: 50px 10px 0 10px;
 	}
-}
+} */
 
 
 /* 320
 =============================== */
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
 
 	header {
 		padding: 10px;
@@ -712,4 +725,4 @@ input {
 		flex-direction: column;
 		padding: 50px 10px;
 	}
-}
+} */
