@@ -275,7 +275,7 @@ button:hover {
 	opacity: 80%;
 }
 
-.promo__card p::before {
+.promo__text p::before {
 	content: "";
 	background: #ec6b29;
 	width: 10px;
