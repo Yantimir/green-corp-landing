@@ -229,9 +229,11 @@ button:hover {
 .features__savings-box {
 	background: #dc5e26;
 	box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
-	margin-right: 30px;
+	margin: 0px 30px;
 }
-
+.features__savings-box h3{
+	margin-bottom: 55px;
+}
 .features__rate-box {
 	background: #1D263A;
 	box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
