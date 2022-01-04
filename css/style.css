@@ -567,7 +567,14 @@ input {
 	}
 
 	.features__savings-box {
-		margin-right: 0px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	.features__savings-box h3{
+		margin-bottom: 15px;
+	}
+
+	.features__savings-box p{
 		margin-bottom: 30px;
 	}
 
