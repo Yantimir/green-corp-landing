@@ -552,9 +552,10 @@ input {
 	.features__feedback {
 		flex-direction: column;
 	}
-
+	
 	.features__feedback-left {
 		margin-right: 0px;
+		width: 100%;
 	}
 	
 	.features__feedback-left h2, .features__box h3{
@@ -575,7 +576,7 @@ input {
 	}
 
 	.features__savings-box p{
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 
 	.promo {
