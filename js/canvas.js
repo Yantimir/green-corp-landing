@@ -2,7 +2,7 @@
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
 
 /*Далее нужно реализовать метод generateBubbles. Он будет создавать массив пузырьков, а количество этих пузырьков вынесем в константу BUBBLE_DENSITY, ее значение будет равно 100*/
-const BUBBLE_DENSITY = 100;
+const BUBBLE_DENSITY = 100; //50
 
 /**нужно проинициализировать начальную позицию пузырька, его размер, скорость движения вверх, прозрачность цвета. Тут пригодится хелпер, который будет возвращать случайное число от MIN до MAX*/
 function generateDecimalBetween(left, right) {
@@ -36,7 +36,7 @@ class Bubble {
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
 
         /*Проинициализируем свойство size класса (this.size) случайным числом от 1 до 3*/
-        this.size = generateDecimalBetween(1, 3);
+        this.size = generateDecimalBetween(1, 3); //3, 9
 
         /*Проинициализируем свойство alpha класса (this.alpha). Оно должно быть равно случайному числу от 5 до 10, а затем полученное число нужно разделить на 10, так как alpha для цвета обозначает прозрачность, которая принимает значения от 0 до 1.*/
         this.alpha = generateDecimalBetween(5, 10) / 10;

@@ -421,6 +421,54 @@ input {
 	font-weight: bold;
 }
 
+/*1024 
+=============================*/
+@media (max-width: 1024px) {
+	header {
+		padding: 20px;
+	}
+	.header__logo {
+		height: 30px;
+	}
+	button {
+		border-radius: 10px;
+		padding: 15px;
+	}
+	.about {
+		padding: 50px 10px;
+	}
+	.about__image {
+		width: 280px;
+	}
+	.about p {
+		line-height: 25px;
+		font-size: 18px;
+	}
+	.about__sun-image {
+		position: absolute;
+		width: 75px;
+		height: 75px;
+		animation: rotation 10s linear infinite;
+	}
+	.about button {
+		font-size: 18px;
+		border-radius: 20px;
+		padding: 20px 25px;
+		margin: 20px 0 0 10px;
+	}
+	.form {
+		padding: 50px 10px;
+	}
+	.form__container h1 {
+		margin: 0 0 50px 0;
+	}
+	.footer__container {
+		padding: 50px 10px 0 10px;
+	}
+	.footer__group {
+		padding: 0 20px;
+	}
+}
 
 /* 720
 ============================== */
@@ -459,10 +507,10 @@ input {
 	}
 
 	.about__sun-image {
-		position: absolute;
+		/* position: absolute; */
 		width: 75px;
 		height: 75px;
-		animation: rotation 10s linear infinite;
+		/* animation: rotation 10s linear infinite; */
 	}
 
 	.about button {
@@ -548,5 +596,113 @@ input {
 
 	.footer__group {
 		padding: 0 10px;
+	}
+}
+
+
+/* 540
+=========================== */
+@media (max-width: 540px) {
+	header {
+		padding: 20px;
+	}
+	.header__logo {
+		height: 20px;
+	}
+	button {
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.about {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 50px 20px;
+	}
+	.about__image {
+		width: 280px;
+	}
+	.about h1 {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.about p {
+		line-height: 25px;
+		font-size: 18px;
+	}
+	.about__sun-image {
+		position: absolute;
+		width: 75px;
+		height: 75px;
+		animation: rotation 10s linear infinite;
+	}
+	.about button {
+		font-size: 18px;
+		border-radius: 20px;
+		padding: 20px 25px;
+		margin: 20px 0 0 10px;
+	}
+	.form {
+		padding: 50px 20px;
+	}
+	.footer__container {
+		display: flex;
+		flex-direction: column;
+		padding: 50px 10px 0 10px;
+	}
+}
+
+
+/* 320
+=============================== */
+@media (max-width: 320px) {
+	header {
+		padding: 10px;
+	}
+	.header__logo {
+		height: 20px;
+	}
+	button {
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.about {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 50px 10px;
+	}
+	.about__image {
+		width: 280px;
+	}
+	.about h1 {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.about p {
+		line-height: 25px;
+		font-size: 18px;
+	}
+	.about__sun-image {
+		position: absolute;
+		width: 75px;
+		height: 75px;
+		animation: rotation 10s linear infinite;
+	}
+	.about button {
+		font-size: 18px;
+		border-radius: 20px;
+		padding: 20px 25px;
+		margin: 20px 0 0 0px;
+	}
+	.card {
+		padding: 35px 40px 25px 40px;
+		margin: 25px 0px;
+	}		
+	.form {
+		padding: 50px 10px;
+	}
+	.footer__container {
+		display: flex;
+		flex-direction: column;
+		padding: 50px 10px;
 	}
 }
