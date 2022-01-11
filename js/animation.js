@@ -19,8 +19,10 @@ function initIncreaseNumberAnimation() {
     const element = document.querySelector(".features__clients-count");
     increaseNumberAnimationStep(0, element, 5000);
 }
-initIncreaseNumberAnimation();
+// initIncreaseNumberAnimation();
+
 /*-------------------------------------------------------------------------------------*/
+
 document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
     if (event.target.value === 'other') {
       const formContainer = document.createElement('div');
@@ -42,5 +44,23 @@ document.querySelector('#budget').addEventListener('change', function handleSele
 });
 
 /*-------------------------------------------------------------------------------------*/
+let animationInited = false;
 
+window.addEventListener('scroll', updateScroll);
 
+function updateScroll() {
+  let header = document.querySelector("header");
+  if (window.scrollY > 0) {
+    header.classList.add("header__scrolled");
+  } else {
+    header.classList.remove("header__scrolled");
+  }
+
+  // Запуск анимации увеличения числа
+  let windowBottomPosition = window.scrollY + window.innerHeight;
+  let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
+  if(windowBottomPosition >= countElementPosition && !animationInited){
+    animationInited = true;
+    initIncreaseNumberAnimation();
+  }
+}
