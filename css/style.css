@@ -11,14 +11,25 @@ body {
 ==============*/
 
 header {
-	position: sticky;
+	position: fixed; /* было sticky*/
+	left: 0;
+	right: 0;
 	top: 0;
-	background: #fff;
+	background: none; 
+
+	transition: box-shadow, background-color .25s ease;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
 	z-index: 1;
+}
+
+/*для состояния с белым фоном*/
+.header__scrolled{
+	background-color: #fff;
+	box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -63,7 +74,7 @@ button:hover {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 115px;
+	padding-top: 200px;
 	padding-bottom: 115px;
 
 	position: relative;
@@ -661,9 +672,13 @@ input {
 	.header__logo {
 		height: 20px;
 	}
+	.header__controls a {
+		margin-right: 10px;
+	}
 	button {
 		border-radius: 10px;
-		padding: 10px;
+		padding: 7px;
+		font-size: 15px;
 	}
 	.about {
 		display: flex;

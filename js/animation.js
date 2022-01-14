@@ -46,9 +46,8 @@ document.querySelector('#budget').addEventListener('change', function handleSele
 /*-------------------------------------------------------------------------------------*/
 let animationInited = false;
 
-window.addEventListener('scroll', updateScroll);
-
 function updateScroll() {
+  // прозрачность для header при прокрутке страницы
   let header = document.querySelector("header");
   if (window.scrollY > 0) {
     header.classList.add("header__scrolled");
@@ -64,3 +63,22 @@ function updateScroll() {
     initIncreaseNumberAnimation();
   }
 }
+window.addEventListener('scroll', updateScroll);
+
+/*-------------------------------------------------------------------------------------*/
+//плавный скролл
+function addSmoothScroll(anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+ 
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}
+ 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  addSmoothScroll(anchor);
+});
+//для button узнать подробнее
+addSmoothScroll(document.querySelector('.more-button'));
